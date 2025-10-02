@@ -1,0 +1,106 @@
+/* static/css/style.css */
+
+/* --- Estilos Globales y Fondo --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6; /* Fondo gris muy claro (moderno y suave) */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+/* --- Contenedor Principal (Tarjeta/Card) --- */
+.container {
+    background-color: #ffffff;
+    padding: 35px 45px;
+    border-radius: 12px; /* Esquinas suaves */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Sombra suave para efecto flotante */
+    text-align: center;
+    max-width: 900px;
+    width: 90%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* --- Tipografía --- */
+h1 {
+    color: #2c3e50; /* Azul oscuro elegante */
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 40px 0;
+}
+
+/* --- Botones y Enlaces (Modernos y con Interacción) --- */
+.button {
+    /* Color principal: Un verde azulado vibrante */
+    background-color: #1abc9c; 
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: #16a085; /* Un tono más oscuro en hover */
+    transform: translateY(-2px); /* Efecto de elevación sutil */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.button:active {
+    transform: translateY(0);
+}
+
+/* --- Estilos para el Formulario de Carga --- */
+.upload-form {
+    margin-top: 25px;
+    padding: 20px;
+    border: 1px dashed #ccc; /* Borde punteado para el área de carga */
+    border-radius: 8px;
+}
+
+.upload-form label {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    color: #444;
+    font-weight: 500;
+}
+
+.input-file {
+    margin-right: 15px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* --- Contenedor del Gráfico (Para darle una dimensión fija) --- */
+.chart-container {
+    width: 100%;
+    max-width: 800px; 
+    height: 450px;    
+    margin: 30px auto;
+}

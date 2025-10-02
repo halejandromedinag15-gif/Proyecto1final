@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cargar Datos para Visualizar</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Visualizador de Datos CSV</h1>
+        <p>Por favor, carga un archivo CSV que contenga datos que desees graficar.</p>
+
+        <form method="POST" action="{{ url_for('upload_file') }}" enctype="multipart/form-data" class="upload-form">
+            <label for="file">Selecciona tu archivo CSV:</label>
+            <input type="file" name="file" id="file" accept=".csv" required class="input-file">
+            <br>
+            <button type="submit" class="button">Cargar y Mostrar Gráfico</button>
+        </form>
+    </div>
+</body>
+</html>
